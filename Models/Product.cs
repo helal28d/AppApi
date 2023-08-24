@@ -15,6 +15,6 @@ public class Product
     public string Name { get; set; }
     public int Price { get; set; }
     [JsonIgnore]
-    public ICollection<User> Users { get; set; }
+    public List<User> Users { get; set; }
 
 }

@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase");
 builder.Services.AddDbContext<DataContext>(options =>
    options.UseSqlite(connectionString));
-
+//builder.services.AddScoped<IAccountService, AccountService>();
 // Configure the HTTP request pipeline.
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
