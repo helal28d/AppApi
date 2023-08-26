@@ -15,6 +15,13 @@ public class DataContext : DbContext
     {
 
     }
+    //add connetion string to db or we use appsetting
+    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    // {
+    //     base.OnConfiguring(optionsBuilder);
+    //     optionsBuilder
+    //         .UseSqlite(" ");
+    // }
 
     public DbSet<User> Users { get; set; }
     public DbSet<Product> Products { get; set; }

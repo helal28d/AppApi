@@ -53,12 +53,28 @@ namespace AppApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Password")
+                    b.Property<byte[]>("PasswordHash")
                         .IsRequired()
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("PasswordResetToken")
                         .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
 
                     b.Property<int?>("Phone")
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("ResetTokenExpires")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("VerificationToken")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("VerifiedAt")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

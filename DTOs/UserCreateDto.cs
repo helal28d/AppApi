@@ -8,9 +8,9 @@ namespace AppApi.DTOs
     public record struct UserCreateDto(
         string FirstName,
         string LastName,
-string Email,
-int Phone,
-string Password,
+        string Email,
+        int Phone,
+        string Password,
        List<ProductCreateDto> Products);
     //        public class UserCreateDto
     // {

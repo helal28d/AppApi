@@ -7,6 +7,7 @@ using AppApi.DTOs;
 using AppApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 namespace AppApi.Controllers
 {
 
@@ -51,7 +52,7 @@ namespace AppApi.Controllers
                 LastName = user.LastName,
                 Email = user.Email,
                 Phone = user.Phone,
-                Password = user.Password
+                //Password = user.Password
             };
             var products = user.Products.Select(p => new Product { Name = p.Name, Price = p.Price, Users = new List<User> { newUser } }).ToList();
             newUser.Products = products;
@@ -76,7 +77,7 @@ namespace AppApi.Controllers
 
             user.Email = userUpdate.Email;
             user.Phone = userUpdate.Phone;
-            user.Password = userUpdate.Password;
+            //user.Password = userUpdate.Password;
             await _context.SaveChangesAsync();
             return Ok();
         }

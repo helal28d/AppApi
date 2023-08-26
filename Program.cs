@@ -1,5 +1,6 @@
 
 using AppApi.Data;
+using AppApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddDbContext<DataContext>(options =>
    options.UseSqlite(connectionString));
 //builder.services.AddScoped<IAccountService, AccountService>();
 // Configure the HTTP request pipeline.
+builder.Services.AddScoped<IEmailService, EmailService>();
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
