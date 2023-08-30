@@ -1965,11 +1965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/helal/Documents/Dotnet/AppApi/AppApi.csproj",
+      "projectUniqueName": "/home/helal/Documents/Vue/vueFirst/AppApi/AppApi.csproj",
       "projectName": "AppApi",
-      "projectPath": "/home/helal/Documents/Dotnet/AppApi/AppApi.csproj",
+      "projectPath": "/home/helal/Documents/Vue/vueFirst/AppApi/AppApi.csproj",
       "packagesPath": "/home/helal/.nuget/packages/",
-      "outputPath": "/home/helal/Documents/Dotnet/AppApi/obj/",
+      "outputPath": "/home/helal/Documents/Vue/vueFirst/AppApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/helal/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P+E7+r7nThQ8xeGHIO/ZtxopnWXqaGR9fVlKMSnfZbiUQXhOdGm0bOsv7xqm1emXnyDb3TLz6K9yS37xVXAfDg==",
+  "dgSpecHash": "wecqtc6K5boeODMNRRX75ylOQyMOF8GbnBe6XlBRAoI+IeX3adScnC/QTbEYa81HkL8yvWOd2+7J2mdeDkdXHQ==",
   "success": true,
-  "projectFilePath": "/home/helal/Documents/Dotnet/AppApi/AppApi.csproj",
+  "projectFilePath": "/home/helal/Documents/Vue/vueFirst/AppApi/AppApi.csproj",
   "expectedPackageFiles": [
     "/home/helal/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/home/helal/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
