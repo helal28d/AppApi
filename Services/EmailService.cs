@@ -47,4 +47,8 @@ public class EmailService : IEmailService
         smtp.Send(email);
         smtp.Disconnect(true);
     }
+    // public bool VerfiyCode(string inCode, string orginCode)
+    // {
+    //     return (inCode.Equals(orginCode));
+    // }
 }

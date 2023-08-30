@@ -42,12 +42,15 @@ public class UserController : ControllerBase
             PasswordSalt = passwordSalt,
             VerificationToken = CreateRandomToken()
         };
+
         _emailService.SendCodeEmail(user.Email, "Verfiy code", user.VerificationToken);
 
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
         return Ok("User successfully created!");
+
+
     }
 
     [HttpPost("login")]
